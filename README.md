@@ -7,5 +7,5 @@ For my final project, I created a console-based, solo-play version of the tablet
 
 In this game, you are an adventurer searching the depths of the sea for treasure. Going down is easy, but as you gather more treasure, it will be harder and harder to move - treasure is heavy! Will you be able to gather your riches and make it back to the top before your air runs out?
 
-*This game is not affiliated with the game makers or its producers.
+*This game is not affiliated with the game makers of Deep Sea Adventures or its producers.
 ASCII art was created by me, or from <a href = "https://asciiart.website/index.php"> Christopher Johnson's ASCII Art Collection </href>
