@@ -47,6 +47,7 @@ def play():
         15:hexagon15
     }
     #Play continues while true
+    #Play continues while true
     while movement < 19 or movement >= 0:   
         #what to do if you're going down
         if direction  == "2":
@@ -77,6 +78,7 @@ def play():
                         round_tracker -=treasures
                 else:
                     print("There is no treasure here. Keep searching!")
+                    round_tracker -= treasures
                 #if you have gone down and taken a lot of treasures and run out of air on the way down
                 if round_tracker < 0:
                     print(dead)
@@ -102,6 +104,7 @@ def play():
                     print("There is no treasure here. Keep searching!")
                     user_input = input("It's too dark down here.\nYou must go back up. Press Enter.")
                     direction = "1"
+                    round_tracker -=treasures
             #if the movement exceeds the length of the treasure trail
             else:
                 movement = 19
@@ -119,6 +122,7 @@ def play():
                         round_tracker -=treasures
                 else:
                     print("There is no treasure here. Keep searching!")
+                    round_tracker -= treasures
                 user_input = input("It's too dark down here.\nYou must go back up. Press Enter.")
                 direction = "1"
         #what to do if heading up, either by choice or because you reached the end
@@ -150,7 +154,6 @@ def play():
                 break
             #win condition
             if movement <= 0 and round_tracker >= 0:
-                print(confetti)
                 print("Congrats, you made it! Your score is", score)
                 print("Here are your treasures:")
                 draw_loot(loot, loot_map)
